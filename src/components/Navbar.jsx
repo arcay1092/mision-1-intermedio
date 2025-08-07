@@ -2,16 +2,13 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav style={{ padding: "1rem", backgroundColor: "#333", color: "#fff" }}>
-      <Link to="/" style={{ marginRight: "1rem", color: "#fff" }}>
-        Inicio
-      </Link>
-      <Link to="/technicians" style={{ marginRight: "1rem", color: "#fff" }}>
-        Técnicos
-      </Link>
-      <Link to="/repairs" style={{ color: "#fff" }}>
-        Arreglos
-      </Link>
+    <nav className="navbar">
+      <h1>Gestión de Reparaciones</h1>
+      <div className="nav-links">
+        <Link to="/">Inicio</Link>
+        <Link to="/technicians">Técnicos</Link>
+        <Link to="/repairs">Reparaciones</Link>
+      </div>
     </nav>
   );
 }
